@@ -14,7 +14,7 @@
 |choice_description|A list of characteristics describing this line item|
 |item_price|The total price of all items and choices on this line (not just unit price).|
 
-The rows represent unique line items on a single order.  An order is comprised of 1 or more line items.
+**The rows represent unique line items on a single order.  An order is comprised of 1 or more line items.**
 
 2 How many orders do there appear to be?
 
@@ -34,7 +34,7 @@ Returns 4623 lines.  The first row is the header so I would expect there to be *
 
     $ grip 'Chicken Burrito' chipotle.tsv | wc         #returns 553 lines
 
-Most of the item_uantity values are 1 so we can be reasonable confidently assume that **Chicken is the most popular**
+Most of the item_quantity values are 1 so we can be reasonable confidently assume that **Chicken is the most popular**
 
 5 Do chicken burritos more often have black beans or pinto beans?
 
