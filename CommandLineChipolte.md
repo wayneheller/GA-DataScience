@@ -4,6 +4,11 @@
 
 1. Look at the head and the tail of **chipotle.tsv** in the **data** subdirectory of this repo. Think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
 
+'''Bash
+more chipotle.tsv
+'''
+
+
 |Column Name|Column Definition|
 |---|---|
 |order_id|Unique order identifier|
@@ -15,6 +20,8 @@
 > The rows represent unique line items on a single order.  An order is comprised of 1 or more line items.
 
 2. How many orders do there appear to be?
+
+
 3. How many lines are in this file?
 4. Which burrito is more popular, steak or chicken?
 5. Do chicken burritos more often have black beans or pinto beans?
