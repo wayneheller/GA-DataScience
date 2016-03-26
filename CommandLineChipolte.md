@@ -4,7 +4,7 @@
 
 > 1 Look at the head and the tail of **chipotle.tsv** in the **data** subdirectory of this repo. Think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
 
-$ less chipotle.tsv to explore the file
+    $ less chipotle.tsv to explore the file
 
 |Column Name|Column Definition|
 |---|---|
@@ -18,25 +18,25 @@ The rows represent unique line items on a single order.  An order is comprised o
 
 > 2 How many orders do there appear to be?
 
-**$ tail chipotle.tsv 1834** is the last order id in the file.  So assuming that the file is sequential, there are **1834 orders**
+    $ tail chipotle.tsv 1834** is the last order id in the file.  So assuming that the file is sequential, there are **1834 orders**
 
 > 3 How many lines are in this file?
 
-**$ wc chipotle.tsv** returns 4623 lines.  The first row is the header so I would expect there to be **4622 rows of data**
+    $ wc chipotle.tsv** returns 4623 lines.  The first row is the header so I would expect there to be **4622 rows of data**
 
 > 4 Which burrito is more popular, steak or chicken?
 
-**$ grep "Steak Burrito" chipotle.tsv | wc** returns 368 lines
+    $ grep "Steak Burrito" chipotle.tsv | wc** returns 368 lines
 
-**$ grip "Chicken Burrito" chipotle.tsv | wc** returns 553 lines
+    $ grip "Chicken Burrito" chipotle.tsv | wc** returns 553 lines
 
 Most of the item_uantity values are 1 so we can be reasonable confidently assume that **Chicken is the most popular**
 
 > 5 Do chicken burritos more often have black beans or pinto beans?
 
-    **$ grep '\<Chicken Burrito.*Pinto Beans\>' | wc** returns 105 lines
+    $ grep '\<Chicken Burrito.*Pinto Beans\>' | wc** returns 105 lines
 
-    **$ grep ''''\<Chicken Burrito.*Black Beans\>' | wc** returns 282 lines
+    $ grep '\<Chicken Burrito.*Black Beans\>' | wc** returns 282 lines
 
 **Black Beans** appear to be more popular
 
