@@ -54,7 +54,7 @@ Most of the item_quantity values are 1 so we can be reasonable confidently assum
 
 8) **Optional:** Use the the command line to discover something "interesting" about the Chipotle data. Try using the commands from the "advanced" section!
 
-I explored the distribution of choice descriptions of food items and determined that there are at most 10 choices per line item and the peak is 5 choices.  Here is a link to the [distribution chart](https://github.com/wayneheller/GA-DataScience/blob/master/Chipotle.xlsx)
+I explored the distribution of choice descriptions of food items and determined that there are at most 10 choices per line item and there is a peak at 0 and another at 5 choices.  Here is a link to the [distribution chart](https://github.com/wayneheller/GA-DataScience/blob/master/Chipotle.xlsx)
 
 Here are the commands used:
 
