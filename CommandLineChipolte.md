@@ -4,9 +4,8 @@
 
 1. Look at the head and the tail of **chipotle.tsv** in the **data** subdirectory of this repo. Think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
 
-'''Bash
-more chipotle.tsv
-'''
+    more chipotle.tsv
+
 
 
 |Column Name|Column Definition|
