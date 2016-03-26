@@ -4,9 +4,7 @@
 
 1. Look at the head and the tail of **chipotle.tsv** in the **data** subdirectory of this repo. Think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
 
-    more chipotle.tsv
-
-
+> $ less chipotle.tsv to explore the file
 
 |Column Name|Column Definition|
 |---|---|
@@ -20,9 +18,16 @@
 
 2. How many orders do there appear to be?
 
+> $ tail chipotle.tsv 1834 is the last order id in the file.  So assuming that the file is sequential, there are 1834 orders
 
 3. How many lines are in this file?
+
+> $ wc chipotle.tsv returns 4623 lines.  The first row is the header so I would expect there to be 4622 rows of data
+
 4. Which burrito is more popular, steak or chicken?
+
+
+
 5. Do chicken burritos more often have black beans or pinto beans?
 6. Make a list of all of the CSV or TSV files in the GA-SEA-DAT1 repo (using a single command). You will be working on your local repo on your laptop.  Think about how wildcard characters can help you with this task.
 7. Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files in the GA-SEA-DAT1 repo.
