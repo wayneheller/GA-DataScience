@@ -54,4 +54,18 @@ Most of the item_quantity values are 1 so we can be reasonable confidently assum
 
 8) **Optional:** Use the the command line to discover something "interesting" about the Chipotle data. Try using the commands from the "advanced" section!
 
+I explored the distribution of choice descriptions of food items and determined that there are at most 10 choices per line item and the peak is 5 choices.  Here is a link to the [distribution chart](https://github.com/wayneheller/GA-DataScience/blob/master/Chipotle.xlsx)
+
+Here are the commands used:
+
+    To determine how many specific choices per item (in this case 10 choices = 9 commas):
+    grep -n -o ',' chipolte.tsv | uniq -c | cut -d: -f 1 | sort -n | grep -c '      9'
+    
+    This is a special case where there are no commas, and you need to filter out the drinks
+    grep -v ',' chipotle.tsv | grep -v 'NULL' | grep -v 'Canned Soft Drink' | grep -v '6 Pack Soft Drink' | grep -v -c 'Izze'
+    
+    These are the commands to determine the count of Drinks
+    grep -c 'Canned Soft Drink' chipotle.tsv  # Repeated for the other drink types '6 Pack Soft Drink; Izze; Bottled Water; Nantucket Nectar"
+    
+    
 
