@@ -5,14 +5,14 @@
 1. Look at the head and the tail of **chipotle.tsv** in the **data** subdirectory of this repo. Think for a minute about how the data is structured. What do you think each column means? What do you think each row means? Tell me! (If you're unsure, look at more of the file contents.)
 
 |Column Name|Column Definition|
-|---:|---:|
+|---|---|
 |order_id|Unique order identifier|
 |item_name|Description of the item to be prepared and served|
 |quantity|The quatity to be prepared and service of this line item|
 |choice_description|A list of characteristics describing this line item|
 |item_price|The total price of all items and choices on this line (not just unit price).|
 
-The rows represent unique line items on a single order.  An order is comprised of 1 or more line items.
+> The rows represent unique line items on a single order.  An order is comprised of 1 or more line items.
 
 2. How many orders do there appear to be?
 3. How many lines are in this file?
