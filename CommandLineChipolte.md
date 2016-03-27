@@ -38,9 +38,9 @@ Most of the item_quantity values are 1 so we can be reasonable confidently assum
 
 5) Do chicken burritos more often have black beans or pinto beans?
 
-    $ grep '\<Chicken Burrito.*Pinto Beans\>' | wc     #returns 105 lines
+    $ grep -c '\<Chicken Burrito.*Pinto Beans\>' chipotle.tsv     #returns 105 lines
 
-    $ grep '\<Chicken Burrito.*Black Beans\>' | wc     #returns 282 lines
+    $ grep -c '\<Chicken Burrito.*Black Beans\>' chipotle.tsv     #returns 282 lines
 
 **Black Beans** appear to be more popular
 
