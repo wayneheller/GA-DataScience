@@ -30,9 +30,9 @@ Returns 4623 lines.  The first row is the header so I would expect there to be *
 
 4) Which burrito is more popular, steak or chicken?
 
-    $ grep 'Steak Burrito' chipotle.tsv | wc           #returns 368 lines
+    $ grep -c 'Steak Burrito' chipotle.tsv           #returns 368 lines
 
-    $ grip 'Chicken Burrito' chipotle.tsv | wc         #returns 553 lines
+    $ grep -c 'Chicken Burrito' chipotle.tsv         #returns 553 lines
 
 Most of the item_quantity values are 1 so we can be reasonable confidently assume that **Chicken is the most popular**
 
@@ -50,7 +50,7 @@ Most of the item_quantity values are 1 so we can be reasonable confidently assum
 
 7) Count the approximate number of occurrences of the word "dictionary" (regardless of case) across all files in the GA-SEA-DAT1 repo.
 
-    $ grep -r - i 'dictionary' .
+    $ grep -r - i 'dictionary' . |wc         # returns 84 lines.
 
 8) **Optional:** Use the the command line to discover something "interesting" about the Chipotle data. Try using the commands from the "advanced" section!
 
