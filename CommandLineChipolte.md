@@ -10,7 +10,7 @@
 |---|---|
 |order_id|Unique order identifier|
 |item_name|Description of the item to be prepared and served|
-|quantity|The quatity to be prepared and service of this line item|
+|quantity|The quatity to be prepared and served of this line item|
 |choice_description|A list of characteristics describing this line item|
 |item_price|The total price of all items and choices on this line (not just unit price).|
 
