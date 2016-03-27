@@ -11,7 +11,7 @@
 |order_id|Unique order identifier|
 |item_name|Description of the item to be prepared and served|
 |quantity|The quatity to be prepared and served of this line item|
-|choice_description|A list of characteristics describing this line item|
+|choice_description|A list of characteristics describing or modifying this line item|
 |item_price|The total price of all items and choices on this line (not just unit price).|
 
 **The rows represent unique line items on a single order.  An order is comprised of 1 or more line items.**
